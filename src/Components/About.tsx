@@ -50,6 +50,26 @@ const About: React.FC = () => {
     config: config.molasses,
   }, [])
 
+
+  const AnimationEnter = () => {
+    apiAnimation.start({ to: { translate: 0, opacity: 1 }, delay: 200, })
+    apiImage.start({ to: { translateY: 0, opacity: 1 }, delay: 200 })
+    apiAuthorName.start({ to: { translateY: 0, opacity: 1 }, onRest: () => setstartAuthorName(true) })
+    startAuthorName && apiAuthorDetail.start({ to: { translateY: 0, opacity: 1 }, onRest: () => setstartAuthorDetail(true) })
+    startAuthorDetail && apiAuthorDetail2.start({ to: { translateY: 0, opacity: 1 }, onRest: () => setstartAuthorDetail2(true) })
+    startAuthorDetail2 && apiAuthorDetail3.start({ to: { translateY: 0, opacity: 1 }, })
+  }
+
+  const AnimationExit = () => {
+    apiAnimation.start({ from: { translate: -400, opacity: 0 } })
+    apiImage.start({ from: { translateY: -200, opacity: 0, transform: `rotateY(${Flip ? 360 : 0}deg)` } })
+    apiAuthorName.start({ from: { opacity: 0 }, config: config.molasses, onStart: () => setstartAuthorName(false) })
+    apiAuthorDetail.start({ from: { opacity: 0 }, config: config.molasses, onStart: () => setstartAuthorDetail(false) })
+    apiAuthorDetail2.start({ from: { opacity: 0 }, config: config.molasses, onStart: () => setstartAuthorDetail2(false) })
+    apiAuthorDetail3.start({ from: { opacity: 0 }, config: config.molasses, })
+  }
+
+
   useEffect(() => {
     if (enter) {
       AnimationEnter();
@@ -80,24 +100,7 @@ const About: React.FC = () => {
     })
   }
 
-  const AnimationEnter = () => {
-    apiAnimation.start({ to: { translate: 0, opacity: 1 }, delay: 200, })
-    apiImage.start({ to: { translateY: 0, opacity: 1 }, delay: 200 })
-    apiAuthorName.start({ to: { translateY: 0, opacity: 1 }, onRest: () => setstartAuthorName(true) })
-    startAuthorName && apiAuthorDetail.start({ to: { translateY: 0, opacity: 1 }, onRest: () => setstartAuthorDetail(true) })
-    startAuthorDetail && apiAuthorDetail2.start({ to: { translateY: 0, opacity: 1 }, onRest: () => setstartAuthorDetail2(true) })
-    startAuthorDetail2 && apiAuthorDetail3.start({ to: { translateY: 0, opacity: 1 }, })
-  }
-
-  const AnimationExit = () => {
-    apiAnimation.start({ from: { translate: -400, opacity: 0 } })
-    apiImage.start({ from: { translateY: -200, opacity: 0, transform: `rotateY(${Flip ? 360 : 0}deg)` } })
-    apiAuthorName.start({ from: { opacity: 0 }, config: config.molasses, onStart: () => setstartAuthorName(false) })
-    apiAuthorDetail.start({ from: { opacity: 0 }, config: config.molasses, onStart: () => setstartAuthorDetail(false) })
-    apiAuthorDetail2.start({ from: { opacity: 0 }, config: config.molasses, onStart: () => setstartAuthorDetail2(false) })
-    apiAuthorDetail3.start({ from: { opacity: 0 }, config: config.molasses, })
-  }
-
+ 
   const authorname = "My name's Zuzim Ajo"
   const authordetails = "I'm an aspiring Full-Stack Web Developer and currently looking for opportunities. I'm a graduate of Bachelor of Science in Computer Engineering at Surigao del Norte State University."
   const authordetails2 = "I begin learning coding with C++ and Java languages. I then proceeded learning Web Development in 2020 choosing JavaScipt as my main language and found fondness of discovering new technologies and building personal projects. I aim to expand my knowledge and develop excellent application."

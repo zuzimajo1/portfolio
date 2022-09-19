@@ -1,6 +1,6 @@
 import React from 'react'
-import { About, Hero, Navbar, Project } from '../Components'
-import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
+import { Hero, Navbar, } from '../Components'
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import BackgroundImage from "../assets/images/herobackground.jpg";
 import Contents from '../Components/Contents';
 const Home: React.FC = () => {

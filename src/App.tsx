@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { GlobalStyles } from './Styles';
 import { Home } from './Pages';
 import { Route, Routes } from 'react-router-dom';
