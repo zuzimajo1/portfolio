@@ -66,7 +66,6 @@ export const AboutStyle = styled.main`
         }
         @media (max-width: 480px) {
           width: 100%;
-          border: 1px solid red;
         }
       }
     }

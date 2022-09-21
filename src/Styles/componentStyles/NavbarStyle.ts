@@ -5,6 +5,7 @@ export const NavbarContainer = styled.header`
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
 `
 
 export const MenuContainer = styled(animated.div)`
