@@ -21,7 +21,7 @@ const Contents: React.FC = () => {
   let ProgressValue = ((Number(Progress?.toFixed(2))) * 90);
 
   useEffect(() => {
-    enter && apiAnimation.start({ to: { opacity: 1, transform: `translateY(${ProgressValue}em)` }, config: config.gentle, })
+    enter && apiAnimation.start({ to: { opacity: 1, transform: `translateY(${ProgressValue}em)` } })
   }, [Progress, enter])
 
   return (
