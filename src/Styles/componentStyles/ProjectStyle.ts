@@ -12,59 +12,61 @@ export const ProjectStyle = styled.main`
     width: 100%;
     height: auto;
 
-    
-      .projects-items {
-        padding: 1.2rem 1.2rem 0rem 1.2rem;
-        background-color: #d9e5de;
+    .projects-items {
+      padding: 1.2rem 1.2rem 0rem 1.2rem;
+      background-color: #d9e5de;
+      width: 100%;
+
+      .project-images {
         width: 100%;
+        height: 300px;
 
-        .project-images{
-          width: 100%;
-          height: 300px;
+        @media (max-width: 550px) {
+          height: 220px;
         }
-        
-        .projects-inner-wrapper {
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-          align-items: center;
-          margin-top: 0.5rem;
-          padding-bottom: 0.2rem;
+      }
 
-          p {
-            font-size: var(--fz-lg);
+      .projects-inner-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 0.5rem;
+        padding-bottom: 0.2rem;
 
-            @media (max-width: 768px) {
-              font-size: 17px;
-            }
+        p {
+          font-size: var(--fz-lg);
 
-            @media (max-width: 640px) {
-              font-size: var(--fz-md);
-            }
+          @media (max-width: 768px) {
+            font-size: 17px;
           }
 
-          a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          @media (max-width: 640px) {
+            font-size: var(--fz-md);
           }
         }
 
         a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      a {
+        width: 100%;
+
+        img {
           width: 100%;
 
-          img {
-            width: 100%;
-
-            &:hover {
-              transform: scale(1.1);
-              transition: ease-in-out 250ms;
-            }
+          &:hover {
+            transform: scale(1.1);
+            transition: ease-in-out 250ms;
           }
         }
       }
     }
-  
+  }
 `;
 
 export const ProjectHeader = styled(animated.h2)`
@@ -88,10 +90,15 @@ export const ProjectHeader = styled(animated.h2)`
 
 
 export const ProjectsWrapper = styled(animated.div)`
-      margin-top: 2rem;
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 40px;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+
+  @media (max-width: 550px) {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+  
 `;
