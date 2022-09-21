@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
         <ContactContainer id='contact'>
             <p className="contact-message">I'm currently looking for opportunies, my inbox is always open and feel free to message me.</p>
             <IntroButton style={styleButton} onMouseEnter={ButtonMouseEnter} onMouseLeave={ButtonMouseLeave} ><a href='mailto:ajozuzim@gmail.com'>Get in touch</a></IntroButton>
-            <p className="contact-copyright">&copy; Zuzim 2020</p>
+            <p className="contact-copyright">&copy; Zuzim 2022</p>
         </ContactContainer>
     )
 }
