@@ -48,11 +48,11 @@ const Hero: React.FC = () => {
 
 
   const AnimationEnter = ()=>{
-    apiAnimationIntro.start({to: { translate: 0, opacity: 1 }, delay: 150, config: config.molasses, onRest: () => setstartAnimateIntro(true)})
-    startAnimateIntro && apiAnimation.start({ to: { opacity: 1 }, delay: 150, config: config.molasses, onRest: () => setstartAnimate(true)})
-    startAnimate && apiDescription.start({ to: { opacity: 1 }, delay: 150, config: config.molasses })
-    sliceNo === 155 && apiButton.start({ to: { opacity: 1, display: 'block' }, delay: 150, config: config.molasses })
-    sliceNo === 155 && apiScrollButton.start({ to: {opacity: 1, display: 'block'}, delay: 150, config: config.molasses })
+    apiAnimationIntro.start({to: { translate: 0, opacity: 1 },config: config.gentle, onRest: () => setstartAnimateIntro(true)})
+    startAnimateIntro && apiAnimation.start({ to: { opacity: 1 },config: config.gentle, onRest: () => setstartAnimate(true)})
+    startAnimate && apiDescription.start({ to: { opacity: 1 },config: config.gentle, })
+    sliceNo === 155 && apiButton.start({ to: { opacity: 1, display: 'block' }, config: config.gentle, })
+    sliceNo === 155 && apiScrollButton.start({ to: { opacity: 1, display: 'block' }, config: config.gentle, })
   }
 
   const AnimationExit = ()=>{
