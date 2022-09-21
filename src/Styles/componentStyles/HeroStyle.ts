@@ -62,6 +62,11 @@ export const IntroButton = styled(animated.button)`
   outline: none;
   border: none;
 
+  a {
+    color: black;
+    cursor: pointer;
+  }
+
   @media (max-width: 768px) {
     font-size: 23px;
     padding: 4px 6px;

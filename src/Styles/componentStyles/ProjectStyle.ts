@@ -7,6 +7,7 @@ export const ProjectStyle = styled.main`
   background-color: rgba(41, 47, 53);
   background-size: cover;
   margin-top: 1rem;
+  padding-bottom: 2.5rem;
 
   .projects-container {
     width: 100%;
@@ -43,6 +44,12 @@ export const ProjectStyle = styled.main`
 
           @media (max-width: 640px) {
             font-size: var(--fz-md);
+          }
+          @media (max-width: 550px) {
+            font-size: 15px;
+          }
+          @media (max-width: 480px) {
+            font-size: var(--fz-sm);
           }
         }
 

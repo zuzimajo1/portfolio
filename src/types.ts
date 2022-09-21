@@ -6,7 +6,7 @@ import SecretMe from "./assets/images/secretme.png";
 import ZappyFashion from "./assets/images/ZappyFashion.png";
 import BarangayLunaSystem from "./assets/images/BarangayLunaManagementSystem.png"
 import CocktailApp from "./assets/images/CocktailMobileApp.png";
-
+import resume from "./assets/resume/Resume.pdf";
 
 export const navigations: navigationArr[] = [
   {
@@ -21,12 +21,12 @@ export const navigations: navigationArr[] = [
   },
   {
     name: "Contact",
-    url: "#",
+    url: "#contact",
     className: "navbar-wrappers",
   },
   {
     name: "Resume",
-    url: "#",
+    url: resume,
     className: "navbar-wrappers2",
   },
 ];
@@ -181,7 +181,7 @@ export interface projectArr {
 
 export interface navigationArr {
   name: string;
-  url: string;
+  url: any;
   className : string;
 }
 

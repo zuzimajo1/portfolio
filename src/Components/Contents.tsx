@@ -6,6 +6,7 @@ import { useParallax } from 'react-scroll-parallax';
 import {config, useSpring } from 'react-spring'
 import Skills from './Skills';
 import { SideElementIcons, sideElementArr } from '../types';
+import Contact from './Contact';
 
 const Contents: React.FC = () => {
   const [Progress, setProgress] = useState<number>();
@@ -39,6 +40,7 @@ const Contents: React.FC = () => {
         <About />
         <Skills />
         <Project />
+        <Contact/>
       </AboutMainWrapper>
       <SideElement>
         <SideComponent style={Animation}><p>ajozuzim@gmail.com</p></SideComponent>

@@ -13,6 +13,7 @@ const Home: React.FC = () => {
         </ParallaxBannerLayer>
       </ParallaxBanner>
       <Contents />
+     
     </>
   )
 }

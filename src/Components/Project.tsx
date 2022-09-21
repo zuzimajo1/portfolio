@@ -52,7 +52,7 @@ const Project: React.FC = () => {
             <div><a href={projectUrl} rel="noopener noreferrer" target="_blank"><img className="project-images" src={projectimg} alt={projectName}></img></a></div> 
             <div className="projects-inner-wrapper">
               <p>{projectName}</p>
-              <p><a href={projectGithubURL}><SiIcon.SiGithub className="projects-icon" color="black" /></a></p>
+              <p><a href={projectGithubURL} target="_blank" rel="noopener noreferrer"><SiIcon.SiGithub className="projects-icon" color="black" /></a></p>
             </div>
             </div>
           ))}

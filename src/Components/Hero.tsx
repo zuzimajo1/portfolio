@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
         <Intro className='intro' style={styleAnimationIntro}>Hi, I am</Intro>
         <IntroName className='intro-name' style={styleAnimation}>Zuzim Ajo</IntroName>
         <IntroDescription className='intro-description' style={styleDescription} >{description.slice(0, sliceNo)}</IntroDescription>
-        <IntroButton style={styleButton} onMouseEnter={ButtonMouseEnter} onMouseLeave={ButtonMouseLeave}>Get in Touch</IntroButton>
+        <IntroButton style={styleButton} onMouseEnter={ButtonMouseEnter} onMouseLeave={ButtonMouseLeave}><a href="#contact">Get in Touch</a></IntroButton>
       </div>
       <ScrollButton style={styleSrollButton}><a href="#about">Scroll down</a></ScrollButton>
     </HeroStyle>
