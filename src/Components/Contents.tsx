@@ -3,7 +3,7 @@ import { AboutInfoMain, AboutMainWrapper, SideComponent, SideElement } from '../
 import About from './About'
 import Project from './Project'
 import { useParallax } from 'react-scroll-parallax';
-import { useSpring } from 'react-spring'
+import {config, useSpring } from 'react-spring'
 import Skills from './Skills';
 import { SideElementIcons, sideElementArr } from '../types';
 
@@ -21,7 +21,7 @@ const Contents: React.FC = () => {
   let ProgressValue = ((Number(Progress?.toFixed(2))) * 90);
 
   useEffect(() => {
-    enter && apiAnimation.start({ to: { opacity: 1, transform: `translateY(${ProgressValue}em)` } })
+    enter && apiAnimation.start({ to: { opacity: 1, transform: `translateY(${ProgressValue}em)` }, config: config.gentle, })
   }, [Progress, enter])
 
   return (
