@@ -28,6 +28,7 @@ export const navigations: navigationArr[] = [
     name: "Resume",
     url: resume,
     className: "navbar-wrappers2",
+    target: "_blank",
   },
 ];
 
@@ -183,6 +184,7 @@ export interface navigationArr {
   name: string;
   url: any;
   className : string;
+  target?: any;
 }
 
 export interface IconsArr {

@@ -60,8 +60,8 @@ const Navbar: React.FC = () => {
         </div>
         <div>
           <ul className='navbars'>
-            {navigations.map(({ name, url, className }: navigationArr) => (
-              <li key={name} className={className}><a href={url}>{name}</a></li>
+            {navigations.map(({ name, url, className, target }: navigationArr) => (
+              <li key={name} className={className}><a href={url} rel="noreferrer" target={target}>{name}</a></li>
             ))
             }
           </ul>
