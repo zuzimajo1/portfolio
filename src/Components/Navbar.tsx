@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
     <NavbarContainer>
       <NavbarStyle id="/">
         <div className='logo'>
-          <h2><a href="https://zuzimajo.netlify.app/">Porfolio.</a></h2>
+          <h2><a href="https://www.zuzimajo.tech/">Porfolio.</a></h2>
         </div>
         <div>
           <ul className='navbars'>
