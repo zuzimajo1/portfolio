@@ -75,8 +75,8 @@ const Navbar: React.FC = () => {
       <MenuContainer style={menuContainer}>
         <div className="navigations-wrapper">
           <ul className='navbars'>
-            {navigations.map(({ name, url, className }: navigationArr) => (
-              <a key={name} href={url}><li className={className} onClick={()=> setopenMenu(false)}><NavigationItems>{name}</NavigationItems></li></a>
+            {navigations.map(({ name, url, className, target }: navigationArr) => (
+              <a key={name} href={url} target={target}><li className={className} onClick={()=> setopenMenu(false)}><NavigationItems>{name}</NavigationItems></li></a>
             ))
             }
           </ul>
