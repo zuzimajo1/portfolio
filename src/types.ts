@@ -7,6 +7,8 @@ import ZappyFashion from "./assets/images/ZappyFashion.png";
 import BarangayLunaSystem from "./assets/images/BarangayLunaManagementSystem.png"
 import CocktailApp from "./assets/images/CocktailMobileApp.png";
 import resume from "./assets/resume/Resume.pdf";
+import BermudezApp from "./assets/images/Bermudez.png"
+import Socializer from "./assets/images/Socializer.jpg";
 
 export const navigations: navigationArr[] = [
   {
@@ -115,21 +117,18 @@ export const Projects: projectArr[] = [
     projectUrl: "https://secretmeph.herokuapp.com/login",
     projectGithubURL: "https://github.com/zuzimajo1/secretme",
     projectimg: SecretMe,
-   
   },
   {
     projectName: "Zappy",
     projectUrl: "http://zappyfashion.herokuapp.com/",
     projectGithubURL: "https://github.com/zuzimajo1/Zappyfashion",
     projectimg: ZappyFashion,
-  
   },
   {
     projectName: "CocktailShop Mobile Application",
     projectUrl:
-      "https://github.com/zuzimajo1/CocktailShop-Mobile-Application/releases/tag/%23apk",
-    projectGithubURL:
-      "https://github.com/zuzimajo1/CocktailShop-Mobile-Application",
+      "https://github.com/zuzimajo1/CocktailShop-Mobile-App/releases/tag/apk",
+    projectGithubURL: "https://github.com/zuzimajo1/CocktailShop-Mobile-App",
     projectimg: CocktailApp,
   },
   {
@@ -137,6 +136,20 @@ export const Projects: projectArr[] = [
     projectUrl: "https://brgyluna-management-system.netlify.app/",
     projectGithubURL: "https://github.com/zuzimajo1/brgy-management-system",
     projectimg: BarangayLunaSystem,
+  },
+  {
+    projectName: "Bermudez Mobile Application",
+    projectUrl:
+      "https://github.com/zuzimajo1/Bermudez-Mobile-Application/releases/tag/apk",
+    projectGithubURL:
+      "https://github.com/zuzimajo1/Bermudez-Mobile-Application",
+    projectimg: BermudezApp,
+  },
+  {
+    projectName: "Socializer",
+    projectUrl: "https://socializerph.netlify.app/",
+    projectGithubURL: "https://github.com/zuzimajo1/Socializer",
+    projectimg: Socializer,
   },
 ];
 
