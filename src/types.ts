@@ -114,13 +114,13 @@ export const Icons: IconsArr[] = [
 export const Projects: projectArr[] = [
   {
     projectName: "Secret Me",
-    projectUrl: "https://secretmeph.herokuapp.com/login",
+    projectUrl: "https://secretme.netlify.app/login",
     projectGithubURL: "https://github.com/zuzimajo1/secretme",
     projectimg: SecretMe,
   },
   {
     projectName: "Zappy",
-    projectUrl: "http://zappyfashion.herokuapp.com/",
+    projectUrl: "https://zappyfashion.netlify.app/",
     projectGithubURL: "https://github.com/zuzimajo1/Zappyfashion",
     projectimg: ZappyFashion,
   },
