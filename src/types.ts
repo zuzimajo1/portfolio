@@ -107,7 +107,6 @@ export const Icons: IconsArr[] = [
     iconname: "Git",
     Icon: SiIcons.SiGit,
   },
-
 ];
 
 
